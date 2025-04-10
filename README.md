@@ -28,3 +28,23 @@ This is a Flask web app that automatically detects and extracts key moments from
 - OpenAI Whisper
 - HTML/CSS (via `index.html`)
 - Tempfile for secure file handling
+
+
+## 📁 Project Files
+
+### 🔹 `Test1.py`
+The main Python file containing the backend logic for the Flask app. It handles:
+- Video file uploads via the `/upload` route.
+- Extracting audio from the video.
+- Using Whisper to transcribe the audio.
+- Processing the transcription to detect important moments.
+- Extracting and concatenating video clips.
+- Returning the final video to the user for download.
+
+### 🔹 `templates/index.html`
+The front-end HTML file where users can:
+- Select a sport type (e.g., Football, Basketball).
+- Upload a video file for processing.
+- Submit the video to receive highlights.
+
+This file is rendered by Flask when accessing the app at `http://localhost:5000`.
